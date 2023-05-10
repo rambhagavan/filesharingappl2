@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | InShare - File Sharing Made Easy</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+
+    <section class="download">
+        <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download">
+        <% if(locals.error){ %>
+        <h4><%= locals.error %> 😏</h4>
+        <% } else { %>
+        <h2>Your Text is ready for Share</h2>
+        <p>Link expires in 24 hours</p>
+        <div class="download__meta">
+            
+        </div>
+        <div style="flex-direction: row">
+            
+            <!-- <a href="<%= downloadLink %>"><%= downloadLink %></a> -->
+            <br>
+            <a href="<%=uuid %>"><%= uuid %></a>
+        </div>
+            
+            <h3>Share with your friends</h3>
+            <form class="emaildata" action="/api/text/send" method="post" type="text/plain">
+                
+                   
+                    <input class="email" type="text" placeholder="Email" name="emailto" required>
+              
+             
+                <input class="DownLink" type="text" placeholder="LINK" name="uuid" required>
+                      
+                    
+                    
+                  <div class="set_button"><button class="button-44" role="button">Send</button></div>
+                
+            </form>
+        
+        <% } %>
+    </section>
+</body>
+
+</html>

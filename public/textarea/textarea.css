@@ -1,0 +1,67 @@
+:root {
+    --main-bg-color: #edf5fe;
+    --light-blue: #03a9f4;
+    --dark-blue: #028bca;
+  }
+  body {
+    font-family: system-ui;
+    background: var(--main-bg-color);
+    /* height: 98vh; */
+    /* overflow: hidden; */
+    /* display: flex;  */
+    /* align-items: center;  */
+ /* justify-content: center; */
+    color: #333; 
+  }
+.navbar{
+    display: flex;
+}
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+  }
+  .textarea{
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 20%;
+  }
+  .heading{
+    margin-left: 45%;
+  }
+  .teaxtrea_stbtn{
+    display: flex;
+    height: 550px;
+    width:700px;
+  }
+  .button-43 {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    text-decoration: none;
+    width: 20%;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 22%;
+    margin-top: 1%;
+  }
+  
+  .button-43:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+  
+  @media (min-width: 768px) {
+    .button-43 {
+      padding: 1rem 2rem;
+    }
+  }
+  

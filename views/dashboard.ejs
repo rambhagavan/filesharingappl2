@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | InShare - File Sharing Made Easy</title>
+    <link rel="stylesheet" href="/dashboardcss/dashboard.css">
+</head>
+
+<body>
+    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+    <section class="download">
+        <!-- <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download"> -->
+        <% if(locals.error){ %>
+        <h4><%= locals.error %> 😏</h4>
+        <% } else { %>
+       <div class="h2"><h2 >Welcome to inshare</h2></div>
+        <!-- <p>L</p> -->
+        <div class="download__meta">
+            
+        </div>
+        <div class="send-btn-container">
+            
+                
+        <div class="set_button">
+            <!-- <div class="filesharing_btn"><button class="button-13" role="button">File share</button></div>
+               <div class="option"><small>or</small></div>
+            <div class="pastebin_btn"><a href=""<button class="button-13" role="button">pastbin</button></div> -->
+            <div class="filesharing_btn">
+                <form action="/uploadfile" method="get">
+                    <button class="button-13" role="button">File share</button>
+                </form>
+            </div>
+            <div class="option"><small>or</small></div>
+            <div class="pastebin_btn">
+                <form action="/textarea" method="get">
+                    <button class="button-13" role="button">Pastebin</button>
+                </form>
+                
+            </div>
+        
+        
+        </div>
+        <% } %>
+    </section>
+    
+</body>
+
+</html>

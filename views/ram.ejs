@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | InShare - File Sharing Made Easy</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+
+    <section class="download">
+        <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download">
+        <% if(locals.error){ %>
+        <h4><%= locals.error %> 😏</h4>
+        <% } else { %>
+        <h2>Upload your File</h2>
+        <!-- <p>L</p> -->
+        <div class="download__meta">
+            
+        </div>
+        <div class="send-btn-container">
+            <form class="upload" action="/api/files" method="post" enctype="multipart/form-data">
+                <label id="inputTag1">
+                    Browse ↑
+                    <br>
+                    <input id="inputTag2" type="file" name="myfile" placeholder="Browse" />
+                  </label>
+                <!-- HTML !-->
+            <button class="button-43" role="button">upload</button>
+
+
+
+              </form>
+
+        </div>
+        <% } %>
+    </section>
+</body>
+
+</html>

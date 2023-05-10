@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | InShare - File Sharing Made Easy</title>
+    <link rel="stylesheet" href="/logincss/login.css">
+</head>
+
+<body>
+    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+    <section class="download">
+        <!-- <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download"> -->
+        <% if(locals.error){ %>
+        <h4><%= locals.error %> 😏</h4>
+        <% } else { %>
+        <h2>Login to inshare</h2>
+        <!-- <p>L</p> -->
+        <p><%= message %></p>
+        <div class="download__meta">
+            
+        </div>
+        <div class="send-btn-container">
+            <form class="emaildata" action="signup" method="post" type="text/plain">
+                
+                   
+                <input class="email" type="text" placeholder="Email" name="emailto" required>
+          
+         
+            <input class="DownLink" type="text" placeholder="password" name="uuid" required>
+            
+                
+                
+              <div class="set_button"><button class="button-44" role="button">Send</button></div>
+              
+            
+        </form>
+        <div class="signup">
+            
+                <small>New user  <a class="signupbutton" href="signup">Sign up</a></small>
+            
+            
+        </div>
+        
+        </div>
+        <% } %>
+    </section>
+    
+</body>
+
+</html>
